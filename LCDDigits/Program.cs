@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Speech.Synthesis;
 
 namespace LCDDigits
 {
     class Program
     {
+        public static SpeechSynthesizer voice = new SpeechSynthesizer();
+
         static void Main(string[] args)
         {
+            //SpeechSynthesizer voice = new SpeechSynthesizer();
             string[] topline = new string[] { " _ ", "   ", " _ ", " _ ", "   ", " _ ", " _ ", " _ ", " _ ", " _ " };
             string[] middles = new string[] { "| |", "  |", " _|", " _|", "|_|", "|_ ", "|_ ", "  |", "|_|", "|_|" };
             string[] bottoms = new string[] { "|_|", "  |", "|_ ", " _|", "  |", " _|", "|_|", "  |", "|_|", "  |" };
@@ -53,7 +57,16 @@ namespace LCDDigits
             {
                 Console.Write(bottoms[toPrint[i]] + space);
             }
+                
             Console.WriteLine("\n\n\nHere you go. Enjoy.");
+            if (isNegative)
+            {
+                voice.Speak("negative" + userNumber.ToString());
+            }
+            else
+            {
+                voice.Speak(userNumber.ToString());
+            }
             Console.ReadLine();
 
         }

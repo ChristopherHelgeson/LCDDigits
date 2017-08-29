@@ -1,0 +1,7 @@
+C:\Users\chris\Documents\Visual Studio 2017\Projects\LCDDigitsSolution\LCDDigits\obj\Release\LCDDigits.csprojResolveAssemblyReference.cache
+C:\Users\chris\Documents\Visual Studio 2017\Projects\LCDDigitsSolution\LCDDigits\obj\Release\LCDDigits.csproj.CoreCompileInputs.cache
+C:\Users\chris\Documents\Visual Studio 2017\Projects\LCDDigitsSolution\LCDDigits\bin\Release\LCDDigits.exe.config
+C:\Users\chris\Documents\Visual Studio 2017\Projects\LCDDigitsSolution\LCDDigits\bin\Release\LCDDigits.exe
+C:\Users\chris\Documents\Visual Studio 2017\Projects\LCDDigitsSolution\LCDDigits\bin\Release\LCDDigits.pdb
+C:\Users\chris\Documents\Visual Studio 2017\Projects\LCDDigitsSolution\LCDDigits\obj\Release\LCDDigits.exe
+C:\Users\chris\Documents\Visual Studio 2017\Projects\LCDDigitsSolution\LCDDigits\obj\Release\LCDDigits.pdb
