@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LCDDigitsTest
 {
     [TestClass]
-    public class UnitTest1
+    public class LCDDigitsTest
     {
         [TestMethod]
         public void TestMethod1()

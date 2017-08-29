@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCDDigits", "LCDDigits\LCDDigits.csproj", "{AE963257-9FB0-425F-BBE4-AC5694F2A343}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCDDigitsTest", "LCDDigitsTest\LCDDigitsTest.csproj", "{F160D20D-E3BE-41C4-BC56-7251E17CAF08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AE963257-9FB0-425F-BBE4-AC5694F2A343}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE963257-9FB0-425F-BBE4-AC5694F2A343}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE963257-9FB0-425F-BBE4-AC5694F2A343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F160D20D-E3BE-41C4-BC56-7251E17CAF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F160D20D-E3BE-41C4-BC56-7251E17CAF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F160D20D-E3BE-41C4-BC56-7251E17CAF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F160D20D-E3BE-41C4-BC56-7251E17CAF08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
