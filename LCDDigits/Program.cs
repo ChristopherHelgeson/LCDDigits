@@ -10,27 +10,48 @@ namespace LCDDigits
     {
         static void Main(string[] args)
         {
-
-            string[] tops = new string[] { " _ ", "   ", " _ ", " _ ", "   ", " _ ", " _ ", " _ ", " _ ", " _ " };
+            string[] topline = new string[] { " _ ", "   ", " _ ", " _ ", "   ", " _ ", " _ ", " _ ", " _ ", " _ " };
             string[] middles = new string[] { "| |", "  |", " _|", " _|", "|_|", "|_ ", "|_ ", "  |", "|_|", "|_|" };
             string[] bottoms = new string[] { "|_|", "  |", "|_ ", " _|", "  |", " _|", "|_|", "  |", "|_|", "  |" };
+            string space = "  ";
+            bool isNegative = false;
 
             PrintTitle();
-            int userNumber = GetUserIntegerAsInt();
+            int userNumber = GetUserInputAsInt();
+            if (userNumber < 0)
+            {
+                userNumber = Math.Abs(userNumber);
+                isNegative = true;
+            }
             List<int> toPrint = IntegerToList(userNumber);
+
+            if (isNegative)
+            {
+                Console.Write("   " + space);
+            }
             for (int i = 0; i < toPrint.Count; i++)
             {
-                Console.Write(tops[toPrint[i]] + "  ");
+                Console.Write(topline[toPrint[i]] + space);
             }
             Console.WriteLine();
+
+            if (isNegative)
+            {
+                Console.Write(" __" + space);
+            }
             for (int i = 0; i < toPrint.Count; i++)
             {
-                Console.Write(middles[toPrint[i]] + "  ");
+                Console.Write(middles[toPrint[i]] + space);
             }
             Console.WriteLine();
+
+            if (isNegative)
+            {
+                Console.Write("   " + space);
+            }
             for (int i = 0; i < toPrint.Count; i++)
             {
-                Console.Write(bottoms[toPrint[i]] + "  ");
+                Console.Write(bottoms[toPrint[i]] + space);
             }
             Console.WriteLine("\n\n\nHere you go. Enjoy.");
             Console.ReadLine();
@@ -56,14 +77,14 @@ namespace LCDDigits
             Console.WriteLine("Welcome to the LCD Digit Generator!\nWhere your input is displayed in LCD font.\n");
         }
 
-        private static int GetUserIntegerAsInt()
+        private static int GetUserInputAsInt()
         {
             int numVal = -1;
             bool repeat = true;
 
             while (repeat == true)
             {
-                Console.Write("\nPlease enter a positive integer: ");
+                Console.Write("\nPlease enter an integer: ");
 
                 string input = Console.ReadLine();
                 
@@ -71,15 +92,16 @@ namespace LCDDigits
                 try
                 {
                     numVal = Convert.ToInt32(input);
-                    if (numVal < 0)
-                    {
-                        Console.WriteLine("\nThat is an integer, but it is negative.");
-                        repeat = true;
-                    }
-                    else
-                    {
-                        repeat = false;
-                    }
+                    //if (numVal < 0)
+                    //{
+                    //    Console.WriteLine("\nThat is an integer, but it is negative.");
+                    //    repeat = true;
+                    //}
+                    //else
+                    //{
+                    //    repeat = false;
+                    //}
+                    repeat = false;
                 }
                 catch (FormatException e)
                 {
